@@ -1,6 +1,5 @@
 package com.rmaurya.PlaneFinder;
+import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 
-import org.springframework.data.repository.CrudRepository;
-
-public interface PlaneFinderRepository extends CrudRepository<Aircraft,Long> {
+public interface PlaneFinderRepository extends ReactiveCrudRepository<Aircraft,Long> {
 }
