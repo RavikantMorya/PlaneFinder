@@ -12,7 +12,6 @@ public class PlaneFinderController {
     // Fetch aircrafts (from the database)
     @GetMapping("/aircraft")
     public Iterable<Aircraft> getAircrafts() {
-        System.out.println(planeFinderService.getAircrafts());
         return planeFinderService.getAircrafts(); // Delegate to service layer
     }
 
